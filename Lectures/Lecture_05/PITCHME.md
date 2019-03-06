@@ -37,7 +37,7 @@
 * **Exact definition may be very subjective**
 
 @snap[east]
-@img[span-60](/Lectures/Lecture05/Assets/img/clean-code.jpg)
+@img[span-60](/Lectures/Lecture_05/Assets/img/clean-code.jpg)
 @snapend
 
 +++
@@ -56,7 +56,7 @@
 +++
 ### Clean Code Measurement
 @snap[midpoint]
-![](/Lectures/Lecture05/Assets/img/clean-code-measurement.jpg)
+![](/Lectures/Lecture_05/Assets/img/clean-code-measurement.jpg)
 @snapend
 
 +++
