@@ -27,7 +27,7 @@
 ---
 ## Clean code
 
-@snap[span-80]
+@snap[west span-80]
 * **Clean code is set advices for writing code**
 * **Clean code in general is code that:**
   * *Is readable (consistent naming conventions, meaningful names of variables and functions)*
