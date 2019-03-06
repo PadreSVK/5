@@ -27,16 +27,27 @@
 ---
 ## Clean code
 
-@snap[west span-80]
-* **Clean code is set advices for writing code**
-* **Clean code in general is code that:**
-  * *Is readable (consistent naming conventions, meaningful names of variables and functions)*
-  * *Is easy to understand (straightforward flow of code)*
-  * *Is easy to extend (add new functionality doesn't mean rewrite whole aplication)*
-* [Clean Code Book](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
-* [Clean Code .NET](https://github.com/thangchung/clean-code-dotnet)
-* **Exact definition may be very subjective**
-@snapend
+
+<ul class="span-80">
+    <li>
+    **Clean code is set advices for writing code**
+    </li>
+    <li>
+        **Clean code in general is code that:**
+    </li>
+    <li>
+    *Is readable (consistent naming conventions, meaningful names of variables and functions)*
+    </li>
+    <li>
+    *Is easy to understand (straightforward flow of code)*
+    </li>
+</ul>
+
+    * *Is easy to extend (add new functionality doesn't mean rewrite whole aplication)*
+    * [Clean Code Book](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
+    * [Clean Code .NET](https://github.com/thangchung/clean-code-dotnet)
+    * **Exact definition may be very subjective**
+
 
 @snap[east]
 @img[span-30](/Lectures/Lecture_05/Assets/img/clean-code.jpg)
