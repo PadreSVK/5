@@ -33,7 +33,7 @@
     **Clean code is set advices for writing code**
     </li>
     <li>
-        **Clean code in general is code that:**
+    **Clean code in general is code that:**
     </li>
     <li>
     *Is readable (consistent naming conventions, meaningful names of variables and functions)*
@@ -41,13 +41,19 @@
     <li>
     *Is easy to understand (straightforward flow of code)*
     </li>
+    <li>
+    *Is easy to extend (add new functionality doesn't mean rewrite whole aplication)*
+    </li>
+    <li>
+    [Clean Code Book](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
+    </li>
+    <li>
+    [Clean Code .NET](https://github.com/thangchung/clean-code-dotnet)
+    </li>
+    <li>
+    **Exact definition may be very subjective**
+    </li>
 </ul>
-
-    * *Is easy to extend (add new functionality doesn't mean rewrite whole aplication)*
-    * [Clean Code Book](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
-    * [Clean Code .NET](https://github.com/thangchung/clean-code-dotnet)
-    * **Exact definition may be very subjective**
-
 
 @snap[east]
 @img[span-30](/Lectures/Lecture_05/Assets/img/clean-code.jpg)
