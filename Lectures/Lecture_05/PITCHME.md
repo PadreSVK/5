@@ -27,6 +27,7 @@
 ---
 ## Clean code
 
+@snap[span-80]
 * **Clean code is set advices for writing code**
 * **Clean code in general is code that:**
   * *Is readable (consistent naming conventions, meaningful names of variables and functions)*
@@ -35,9 +36,10 @@
 * [Clean Code Book](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 * [Clean Code .NET](https://github.com/thangchung/clean-code-dotnet)
 * **Exact definition may be very subjective**
+@snapend
 
 @snap[east]
-@img[span-60](/Lectures/Lecture_05/Assets/img/clean-code.jpg)
+@img[span-30](/Lectures/Lecture_05/Assets/img/clean-code.jpg)
 @snapend
 
 +++
