@@ -6,14 +6,14 @@
 ## How to write maintainable code (Clean Code, SOLID), Refactorization
 @snapend
 
-@snap[south-east span-40]
+@snap[south-east span-60]
 [ Patrik Švikruha <patrik.svikruha@vutbr.cz> ]
 @snapend
 
 ---
 ## What Programmers Say
 
-|  What Programmers Say |  What Programmers Mean
+|  What Programmers Say |  What Programmers Mean |
 |---|---|
 | Horrible hack  |  Horrible hack that I didn't write |
 | Temporary workaround |  Horrible hack that I wrote |
@@ -37,7 +37,7 @@
 * **Exact definition may be very subjective**
 
 @snap[east]
-@img[span-60](/Lectures/Lecture07/Assets/img/clean-code.jpg)
+@img[span-60](/Lectures/Lecture05/Assets/img/clean-code.jpg)
 @snapend
 
 +++
@@ -46,9 +46,9 @@
 @snap[midpoint span-100]
 
 * *Any **fool** can write code that a computer can understand. Good programmers write code that **humans** can understand.*  
-  — Martin Fowler
+  — Martin Fowler  
 * *Clean code **is simple and direct**. **Clean code reads like well-written prose**. Clean code never obscures the designers’ intent but rather is full of crisp abstractions and straightforward lines of control.*  
-  — Grady Booch
+  — Grady Booch  
 * *If you want your code to be **easy to write**, make it **easy to read**.*  
   — Robert C. Martin
 
@@ -56,7 +56,7 @@
 +++
 ### Clean Code Measurement
 @snap[midpoint]
-![](/Lectures/Lecture07/Assets/img/clean-code-measurement.jpg)
+![](/Lectures/Lecture05/Assets/img/clean-code-measurement.jpg)
 @snapend
 
 +++
@@ -65,6 +65,7 @@
 * **Readability means**  
   * **Meaningfully naming** - pronounceable names (function || variable)
   * *Length is not a virtue in a name; clarity of expression is.* — Rob Pike
+
 ```C#
 int dafbi; // what is the meaning of this acronym?
 for(var the_element_inArray_index=0; the_element_inArray_index < myArray.Length; the_element_inArray_index++) // hmmmm...
@@ -95,12 +96,10 @@ public DateTime ModificationTimestamp {get;set;}
 
 ```C#
  // unify naming in project
-string ProductInfo;
-string ProductData;
+string ProductInfo; string ProductData;
 
 // use consistent naming convetions
-private DateTime date_of_birth;
-private DateTime DATEOFBIRTH;
+private DateTime date_of_birth; private DateTime DATEOFBIRTH;
 
 // avoid Magic constants
 if(numberOfConnection <= 15)
@@ -109,26 +108,24 @@ if(numberOfConncetion <= DEFAULT_NUMBER_OF_CONNECTION)
     //...
     
 //avoid hungarian notation
-int nAgeOfPerson;
-int ageOfPerson;
+int nAgeOfPerson; int ageOfPerson;
 
 //avoid disinformation name
 private void Getage() // get prefix and void return type??
 private int GetAge()
 
 ```
-@[1-3]
-@[5-7]
-@[9-13]
-@[15-17]
-@[19-21]
-@[1-21]
+@[1-2]
+@[4-6]
+@[7-11]
+@[13-14]
+@[16-18]
+@[1-18]
 
 +++
 ### Clean Code - Readability
 
- * **Meaningfully naming** - pronounceable names (function || variable)
-    * *Length is not a virtue in a name; clarity of expression is.* — Rob Pike
+ * **Meaningfully naming** - pronounceable names (function || variable)    
   * Consistent naming conventions
   * **Avoid using magic constants**
   * Avoid synonyms
