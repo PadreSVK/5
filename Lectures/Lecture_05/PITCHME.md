@@ -15,13 +15,13 @@
 
 |  What Programmers Say |  What Programmers Mean |
 |---|---|
-| Horrible hack  |  Horrible hack that I didn't write |
+| **Horrible hack**  |  **Horrible hack that I didn't write** |
 | Temporary workaround |  Horrible hack that I wrote |
-| It's broken  | There are bugs in your code |
+| **It's broken**  | **There are bugs in your code** |
 | It has a few issues | There are bugs in my code |
-| Obscure | Someone else's code doesn't have comments |
+| **Obscure** | **Someone else's code doesn't have comments** |
 | Self-documenting | My code doesn't have comments |
-| Bad structure | Someone else's code is badly organised |
+| **Bad structure** | **Someone else's code is badly organised** |
 | Complex structure | My code is badly organized |
 
 ---
@@ -190,7 +190,8 @@ public long Fibonacci(int index)
 @[3-4]
 @[20-24]
 @[5-6,15-19]
-@[7-14]
+@[7,11-14]
+@[7-10]
 @[1-25]
 
 +++
@@ -212,9 +213,10 @@ public long Fibonacci(int index)
     return Fibonacci(index - 1) + Fibonacci(index - 2);
 }
 ```
-@[1-2,13-14]
+@[1-2]
 @[3-7]
 @[9-12]
+@[13-14]
 @[1-14]
 
 +++
