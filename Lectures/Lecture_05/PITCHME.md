@@ -55,8 +55,8 @@
     </li>
 </ul>
 
-@snap[east]
-@img[span-30](/Lectures/Lecture_05/Assets/img/clean-code.jpg)
+@snap[north-east]
+@img[span-35](/Lectures/Lecture_05/Assets/img/clean-code.jpg)
 @snapend
 
 +++
@@ -64,14 +64,18 @@
 
 @snap[midpoint span-100]
 
-* *Any **fool** can write code that a computer can understand. Good programmers write code that **humans** can understand.*  
-  — Martin Fowler  
-* *Clean code **is simple and direct**. **Clean code reads like well-written prose**. Clean code never obscures the designers’ intent but rather is full of crisp abstractions and straightforward lines of control.*  
+*Any **fool** can write code that a computer can understand. Good programmers write code that **humans** can understand.*  
+  — Martin Fowler 
+
+
+*Clean code **is simple and direct**. **Clean code reads like well-written prose**. Clean code never obscures the designers’ intent but rather is full of crisp abstractions and straightforward lines of control.*  
   — Grady Booch  
-* *If you want your code to be **easy to write**, make it **easy to read**.*  
+
+
+*If you want your code to be **easy to write**, make it **easy to read**.*  
   — Robert C. Martin
 
-@snapend**
+@snapend
 +++
 ### Clean Code Measurement
 @snap[midpoint]
@@ -107,7 +111,7 @@ public DateTime ModificationTimestamp {get;set;}
 +++
 ### Clean Code - Readability
 
-* Avoid synonyms
+* Avoid synonyms (Info, Data, Information), be consistent
 * Consistent naming conventions
 * **Avoid using magic constants**
 * Avoid hungarian notation
@@ -122,9 +126,7 @@ private DateTime date_of_birth; private DateTime DATEOFBIRTH;
 
 // avoid Magic constants
 if(numberOfConnection <= 15)
-    //....
 if(numberOfConncetion <= DEFAULT_NUMBER_OF_CONNECTION)
-    //...
     
 //avoid hungarian notation
 int nAgeOfPerson; int ageOfPerson;
@@ -136,7 +138,37 @@ private int GetAge()
 ```
 @[1-2]
 @[4-6]
-@[7-11]
+@[7-9]
+@[11-12]
+@[14-16]
+@[1-16]
+
++++
+### Clean Code - Readability
+  * **Create short straightforward functions**
+    * Is easy to test
+    * No side effects
+  * **Avoid mutate value of variable too often**
+  * **Avoid more (>=2) return statement from method**
+
+@snap[south]
+![](/Lectures/Lecture_05/Assets/img/CodeComplexity.png)
+@snapend
+
++++
+### Clean code - Basic rules -Summary
+
+* **Meaningful naming**
+    * Name (function || variable) to reflect what we want to do
+* **Consistent naming conventions**
+    * Use XYZcase, but consistently
+* **Do not mutate value of variable too often**
+    * Difficult debugging and difficult to understand
+* **Create short straightforward functions**
+    * Easy testing, easy debugging, easy to understand
+* **Write code, that will be read like well-written prose**
+* ****
+
 @[13-14]
 @[16-18]
 @[1-18]
