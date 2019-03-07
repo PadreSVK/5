@@ -36,14 +36,17 @@
     **Clean code in general is code that:**
     </li>
     <li>
-    *Is readable (consistent naming conventions, meaningful names of variables and functions)*
-    </li>
-    <li>
-    *Is easy to understand (straightforward flow of code)*
-    </li>
-    <li>
-    *Is easy to extend (add new functionality doesn't mean rewrite whole aplication)*
-    </li>
+    <ul>
+        <li>
+        *Is readable (consistent naming conventions, meaningful names of variables and functions)*
+        </li>
+        <li>
+        *Is easy to understand (straightforward flow of code)*
+        </li>
+        <li>
+        *Is easy to extend (add new functionality doesn't mean rewrite whole aplication)*
+        </li>
+    </ul>
     <li>
     [Clean Code Book](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
     </li>
@@ -65,7 +68,7 @@
 @snap[midpoint span-100]
 
 *Any **fool** can write code that a computer can understand. Good programmers write code that **humans** can understand.*  
-  — Martin Fowler 
+  — Martin Fowler  
 
 
 *Clean code **is simple and direct**. **Clean code reads like well-written prose**. Clean code never obscures the designers’ intent but rather is full of crisp abstractions and straightforward lines of control.*  
@@ -149,14 +152,73 @@ private int GetAge()
     * Is easy to test
     * No side effects
   * **Avoid mutate value of variable too often**
-  * **Avoid more (>=2) return statement from method**
+  * **Avoid more (>=2) return statements from method**
 
-@snap[south]
 ![](/Lectures/Lecture_05/Assets/img/CodeComplexity.png)
-@snapend
+
 
 +++
-### Clean code - Basic rules -Summary
+### Avoid more (>=2) return statements from method
+```C#
+public long Fibonacci(int index)
+{
+    if (index < 50)
+    {
+        if (index != 0)
+        {
+            if (index != 1)
+            {
+                return Fibonacci(index - 1) + Fibonacci(index - 2);
+            }
+            else
+            {
+                return 1;
+            }
+        }
+        else
+        {
+            return 0;
+        }
+    }
+    else
+    {
+        throw new System.ArgumentOutOfRangeException();
+    }
+}
+```
+@[1-2]
+@[3-4]
+@[20-24]
+@[5-6,15-19]
+@[7-14]
+@[1-25]
+
++++
+### Avoid more (>=2) return statements from method
+```C#
+public long Fibonacci(int index)
+{
+    //first check if have all arguments expected format / value
+    if (index > 50)
+    {
+        throw new System.ArgumentOutOfRangeException();
+    }
+
+    if (index == 0 || index == 1)
+    {
+        return index;
+    }
+
+    return Fibonacci(index - 1) + Fibonacci(index - 2);
+}
+```
+@[1-2,13-14]
+@[3-7]
+@[9-12]
+@[1-14]
+
++++
+###  Common Clean code rules
 
 * **Meaningful naming**
     * Name (function || variable) to reflect what we want to do
@@ -167,7 +229,6 @@ private int GetAge()
 * **Create short straightforward functions**
     * Easy testing, easy debugging, easy to understand
 * **Write code, that will be read like well-written prose**
-* ****
 
 @[13-14]
 @[16-18]
