@@ -68,15 +68,15 @@
 @snap[midpoint span-100]
 
 *Any **fool** can write code that a computer can understand. Good programmers write code that **humans** can understand.*  
-  — Martin Fowler  
-
+ Martin Fowler  
+<br>
 
 *Clean code **is simple and direct**. **Clean code reads like well-written prose**. Clean code never obscures the designers’ intent but rather is full of crisp abstractions and straightforward lines of control.*  
-  — Grady Booch  
-
+  Grady Booch  
+<br>
 
 *If you want your code to be **easy to write**, make it **easy to read**.*  
-  — Robert C. Martin
+  Robert C. Martin
 
 @snapend
 +++
