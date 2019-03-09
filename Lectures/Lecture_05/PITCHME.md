@@ -243,11 +243,8 @@ public long Fibonacci(int index)
 * Designed for object oriented paradigm
 * Principles is originally related to class design
 
-@snap[midpoint]
-
-The SOLID principles are **not rules**. **They are not laws**. They are not perfect truths. The **are statements** on the order of “An apple a day keeps the doctor away.” This is a good principle, it is good advice, but it’s not a pure truth, nor is it a rule.  
+*The SOLID principles are **not rules**. **They are not laws**. They are not perfect truths. The **are statements** on the order of “An apple a day keeps the doctor away.” This is a good principle, it is good advice, but it’s not a pure truth, nor is it a rule.*  
 *source: [Robert C. Martin, Getting a SOLID start](https://sites.google.com/site/unclebobconsultingllc/getting-a-solid-start)*
-@snapend
 
 +++
 ### SOLID acronym meaning
