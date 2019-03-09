@@ -268,7 +268,7 @@ The SOLID principles are **not rules**. **They are not laws**. They are not perf
     * It si better compose small methods/classes/interfaces like one GOD method/class/interface
  
 +++
-![](/Lectures/Lecture_05/Assets/img/singleResponsibility.png)
+![](/Lectures/Lecture_05/Assets/img/singleResponsibility.jpg)
 
 +++
 ### sOlid - Open closed principle
@@ -282,7 +282,7 @@ The SOLID principles are **not rules**. **They are not laws**. They are not perf
 
 
 +++
-![](/Lectures/Lecture_05/Assets/img/openClosedPrinciple.png)
+![](/Lectures/Lecture_05/Assets/img/openClosedPrinciple.jpg)
 
 +++
 ### soLid - Liskov substitution principle
@@ -326,11 +326,11 @@ The SOLID principles are **not rules**. **They are not laws**. They are not perf
 *source: [Robert C. Martin, OCP: The Open-Closed Principle](https://www.goodreads.com/book/show/26091039-ocp)*
 
 +++
-![](/Lectures/Lecture_05/Assets/img/dependencyInversionPrinciple.png)
+![](/Lectures/Lecture_05/Assets/img/dependencyInversionPrinciple.jpg)
 
 
 +++
-![](/Lectures/Lecture_05/Assets/img/dependencyInversionPrinciple2.png)
+![](/Lectures/Lecture_05/Assets/img/dependencyInversionPrinciple2.jpg)
 
 
 +++
