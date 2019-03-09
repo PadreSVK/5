@@ -61,7 +61,7 @@
 @img[span-35](/Lectures/Lecture_05/Assets/img/clean-code.jpg)
 @snapend
 
-+++
+---
 ### (Told || Wrote) about Clean Code
 
 @snap[midpoint span-100]
@@ -78,13 +78,14 @@
   Robert C. Martin
 
 @snapend
-+++
+
+---
 ### Clean Code Measurement
 @snap[midpoint]
 ![](/Lectures/Lecture_05/Assets/img/clean-code-measurement.jpg)
 @snapend
 
-+++
+---
 ### Clean Code - Readability
 
 * **Readability means**  
@@ -110,7 +111,7 @@ public DateTime ModificationTimestamp {get;set;}
 @[4,6,10]
 @[1-10]
 
-+++
+---
 ### Clean Code - Readability
 
 * Avoid synonyms (Info, Data, Information), be consistent
@@ -145,7 +146,7 @@ private int GetAge()
 @[14-16]
 @[1-16]
 
-+++
+---
 ### Clean Code - Readability
   * **Create short straightforward functions**
     * Is easy to test
@@ -220,7 +221,7 @@ public long Fibonacci(int index)
 @[13-14]
 @[1-14]
 
-+++
+---
 ###  Common Clean code rules
 
 * **Meaningful naming**
@@ -233,7 +234,7 @@ public long Fibonacci(int index)
     * Easy testing, easy debugging, easy to understand
 * **Write code, that will be read like well-written prose**
 
-+++
+---
 ## Solid principles
 
 * 5 principles that is observed from real life development
@@ -246,7 +247,7 @@ public long Fibonacci(int index)
 *The SOLID principles are **not rules**. **They are not laws**. They are not perfect truths. The **are statements** on the order of “An apple a day keeps the doctor away.” This is a good principle, it is good advice, but it’s not a pure truth, nor is it a rule.*  
 *source: [Robert C. Martin, Getting a SOLID start](https://sites.google.com/site/unclebobconsultingllc/getting-a-solid-start)*
 
-+++
+---
 ### SOLID acronym meaning
 * **S**ingle responsibility principle
 * **O**pen/Closed principle
@@ -254,7 +255,7 @@ public long Fibonacci(int index)
 * **I**nterface segregation
 * **D**ependency inversion principle
 
-+++
+---
 ### Solid - Single responsibility principle
 * Talking about class, interface, method (all those will be refer as "code")
 * Code should have single straightforward role with single responsibility
@@ -267,7 +268,7 @@ public long Fibonacci(int index)
 +++
 ![](/Lectures/Lecture_05/Assets/img/singleResponsibility.png)
 
-+++
+---
 ### sOlid - Open closed principle
 
 * Author of term is Bertrand Meyer (*Object Oriented Software Construction 1988*)
@@ -281,7 +282,7 @@ public long Fibonacci(int index)
 +++
 ![](/Lectures/Lecture_05/Assets/img/openClosedPrinciple.jpg)
 
-+++
+---
 ### soLid - Liskov substitution principle
 
 * Introduced by Barbara Liskov in a 1987
@@ -296,7 +297,7 @@ public long Fibonacci(int index)
 +++
 ![](/Lectures/Lecture_05/Assets/img/liskovSubstitutionPrinciple.jpg)
 
-+++
+---
 ### solId - Interface segregation principle
 
 * Interface must be simply and straightforward
@@ -309,7 +310,7 @@ public long Fibonacci(int index)
 ![](/Lectures/Lecture_05/Assets/img/interfaceSegregationPrinciple.jpg)
 
 
-+++
+---
 ### soliD - Dependency inversion principle
 
 * Dependence on abstraction, not on concrete implementation
@@ -330,7 +331,7 @@ public long Fibonacci(int index)
 ![](/Lectures/Lecture_05/Assets/img/dependencyInversionPrinciple2.jpg)
 
 
-+++
+---
 ### Solid - in short
 
 * **S** - class/method have one responsibility
