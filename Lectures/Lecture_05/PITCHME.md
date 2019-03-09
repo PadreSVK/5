@@ -234,8 +234,6 @@ public long Fibonacci(int index)
 * **Write code, that will be read like well-written prose**
 
 +++
-
-
 ## Solid principles
 
 * 5 principles that is observed from real life development
@@ -251,6 +249,7 @@ The SOLID principles are **not rules**. **They are not laws**. They are not perf
 *source: [Robert C. Martin, Getting a SOLID start](https://sites.google.com/site/unclebobconsultingllc/getting-a-solid-start)*
 @snapend
 
++++
 ### SOLID acronym meaning
 * **S**ingle responsibility principle
 * **O**pen/Closed principle
@@ -269,8 +268,6 @@ The SOLID principles are **not rules**. **They are not laws**. They are not perf
     * It si better compose small methods/classes/interfaces like one GOD method/class/interface
  
 +++
-### Solid - Single responsibility principle
-
 ![](/Lectures/Lecture_05/Assets/img/singleResponsibility.png)
 
 +++
@@ -285,7 +282,6 @@ The SOLID principles are **not rules**. **They are not laws**. They are not perf
 
 
 +++
-### sOlid - Open closed principle
 ![](/Lectures/Lecture_05/Assets/img/openClosedPrinciple.png)
 
 +++
@@ -301,7 +297,6 @@ The SOLID principles are **not rules**. **They are not laws**. They are not perf
 * Related to polymorphism
 
 +++
-### soLid - Liskov substitution principle
 ![](/Lectures/Lecture_05/Assets/img/liskovSubstitutionPrinciple.jpg)
 
 +++
@@ -314,7 +309,6 @@ The SOLID principles are **not rules**. **They are not laws**. They are not perf
 
 
 +++
-### solId - Interface segregation principle
 ![](/Lectures/Lecture_05/Assets/img/interfaceSegregationPrinciple.jpg)
 
 
@@ -332,12 +326,10 @@ The SOLID principles are **not rules**. **They are not laws**. They are not perf
 *source: [Robert C. Martin, OCP: The Open-Closed Principle](https://www.goodreads.com/book/show/26091039-ocp)*
 
 +++
-### soliD - Dependency inversion principle
 ![](/Lectures/Lecture_05/Assets/img/dependencyInversionPrinciple.png)
 
 
 +++
-### soliD - Dependency inversion principle
 ![](/Lectures/Lecture_05/Assets/img/dependencyInversionPrinciple2.png)
 
 
