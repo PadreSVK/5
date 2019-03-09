@@ -27,7 +27,6 @@
 ---
 ## Clean code
 
-
 <ul class="span-80">
     <li>
     **Clean code is set advices for writing code**
@@ -152,13 +151,15 @@ private int GetAge()
     * Is easy to test
     * No side effects
   * **Avoid mutate value of variable too often**
-  * **Avoid more (>=2) return statements from method**
+  * Ration between write and read code is 1:10
+  * **Avoid more (>2) return statements from method**
+    * This method have lower *Maintainability index*
+    * It is prerequisite for higher *Cyclomatic complexity* (consequence of more linearly independent paths through our method (too much if-else of switch-es statements))
 
 ![](/Lectures/Lecture_05/Assets/img/CodeComplexity.png)
 
-
 +++
-### Avoid more (>=2) return statements from method
+### Avoid more (>2) return statements from method
 ```C#
 public long Fibonacci(int index)
 {
@@ -195,7 +196,7 @@ public long Fibonacci(int index)
 @[1-25]
 
 +++
-### Avoid more (>=2) return statements from method
+### Avoid more (>2) return statements from method
 ```C#
 public long Fibonacci(int index)
 {
@@ -232,18 +233,119 @@ public long Fibonacci(int index)
     * Easy testing, easy debugging, easy to understand
 * **Write code, that will be read like well-written prose**
 
-@[13-14]
-@[16-18]
-@[1-18]
++++
+
+
+## Solid principles
+
+* 5 principles that is observed from real life development
+* Is subset of principles promoted by Robert C. Martin
+* These principles are heuristics
+* They are common-sense solutions to common problems
+* Designed for object oriented paradigm
+* Principles is originally related to class design
+
+@snap[midpoint]
+
+The SOLID principles are **not rules**. **They are not laws**. They are not perfect truths. The **are statements** on the order of “An apple a day keeps the doctor away.” This is a good principle, it is good advice, but it’s not a pure truth, nor is it a rule.  
+*source: [Robert C. Martin, Getting a SOLID start](https://sites.google.com/site/unclebobconsultingllc/getting-a-solid-start)*
+@snapend
+
+### SOLID acronym meaning
+* **S**ingle responsibility principle
+* **O**pen/Closed principle
+* **L**iskov substitution principle
+* **I**nterface segregation
+* **D**ependency inversion principle
 
 +++
-### Clean Code - Readability
+### Solid - Single responsibility principle
+* Talking about class, interface, method (all those will be refer as "code")
+* Code should have single straightforward role with single responsibility
+* Code should have one, and only one, reason to be changed
+* **Big is bad, small is good**
+    * Single responsibility doesn't mean single method in class!
+* Related with composition over inheritance
+    * It si better compose small methods/classes/interfaces like one GOD method/class/interface
+ 
++++
+### Solid - Single responsibility principle
 
- * **Meaningfully naming** - pronounceable names (function || variable)    
-  * Consistent naming conventions
-  * **Avoid using magic constants**
-  * Avoid synonyms
-  * **Avoid mutate value of variable too often**
-  * Proper use of closures
-  * Create short straightforward functions
+![](/Lectures/Lecture_05/Assets/img/singleResponsibility.png)
 
++++
+### sOlid - Open closed principle
+
+* Author of term is Bertrand Meyer (*Object Oriented Software Construction 1988*)
+* Open for extensions, closed for modification
+* Robert C. Martin considered this principle as the “the most important principle of object-oriented design”
+* It is often misunderstood, it means: *if change your code in expected ways, you don't have to make sweeping changes to all modules in system*
+    * In other words: **it should be easy to change the behavior of a module without changing the source code of that module**
+* Related to abstraction
+
+
++++
+### sOlid - Open closed principle
+![](/Lectures/Lecture_05/Assets/img/openClosedPrinciple.png)
+
++++
+### soLid - Liskov substitution principle
+
+* Introduced by Barbara Liskov in a 1987
+* If *S* is a subtype of *T*, then objects of type *T* may be replaced with objects of type *S*
+    * Object type *S* may be substituted by object type *T*
+* Right use "is" and "have" relations
+    * Right use inheritance and composition
+* Child do not change behavior of parent
+* A subclass should require nothing more and promise nothing less
+* Related to polymorphism
+
++++
+### soLid - Liskov substitution principle
+![](/Lectures/Lecture_05/Assets/img/liskovSubstitutionPrinciple.jpg)
+
++++
+### solId - Interface segregation principle
+
+* Interface must be simply and straightforward
+    * Class can implement multiple interfaces
+* Interface shouldn't force client to implement non related methods/properties
+* Abstraction should be simply and easy to understand
+
+
++++
+### solId - Interface segregation principle
+![](/Lectures/Lecture_05/Assets/img/interfaceSegregationPrinciple.jpg)
+
+
++++
+### soliD - Dependency inversion principle
+
+* Dependence on abstraction, not on concrete implementation
+* Allows reuse code in proper way
+* High-level modules should not depend on low-level modules. Both should depend on abstractions
+* Abstractions should not depend upon details. Details should depend upon abstractions.
+* Overleap with Open Closed principles and Liskov substitution principle, but is more general
+
+
+*In this column, we discuss the structural implications of the OCP and the LSP. The structure that results from rigorous use of these principles can be generalized into a principle all by itself. I call it “The Dependency Inversion Principle” (DIP).*  
+*source: [Robert C. Martin, OCP: The Open-Closed Principle](https://www.goodreads.com/book/show/26091039-ocp)*
+
++++
+### soliD - Dependency inversion principle
+![](/Lectures/Lecture_05/Assets/img/dependencyInversionPrinciple.png)
+
+
++++
+### soliD - Dependency inversion principle
+![](/Lectures/Lecture_05/Assets/img/dependencyInversionPrinciple2.png)
+
+
++++
+### Solid - in short
+
+* **S** - class/method have one responsibility
+* **O** - class should be open for modification and closed for modification
+* **L** - right use of inheritance and composition
+* **I** - create more simple interfaces
+* **D** - dependence on abstraction, not on concrete implementation 
