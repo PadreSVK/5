@@ -265,7 +265,7 @@ public long Fibonacci(int index)
     * It si better compose small methods/classes/interfaces like one GOD method/class/interface
  
 +++
-![](/Lectures/Lecture_05/Assets/img/singleResponsibility.jpg)
+![](/Lectures/Lecture_05/Assets/img/singleResponsibility.png)
 
 +++
 ### sOlid - Open closed principle
