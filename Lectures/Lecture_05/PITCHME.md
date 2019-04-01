@@ -61,13 +61,6 @@
 @img[span-35](/Lectures/Lecture_05/Assets/img/clean-code.jpg)
 @snapend
 
----
-### Eagleson's law
-@snap[midpoint]  
-
-"Any code of your own that you haven't looked at for six or more months might as well have been written by someone else."  
-
-@snapend
 
 ---
 ### (Told || Wrote) about Clean Code
@@ -88,6 +81,13 @@
 @snapend
 
 
+---
+### Eagleson's law
+@snap[midpoint]  
+
+"Any code of your own that you haven't looked at for six or more months might as well have been written by someone else."  
+
+@snapend
 
 ---
 ### Clean Code Measurement
